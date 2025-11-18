@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         for (i in 1..20) {
             val image = android.R.drawable.arrow_up_float
             val descripcion = "Descripción elemento $i"
-            val descripcion2 = "Hello World  $i"
-            data.add(ItemViewModel(image, descripcion, descripcion2))
+            val saludo = "Hello World  $i"
+            data.add(ItemViewModel(image, descripcion, saludo))
         }
 
         val adapter = DataAdapter(data)

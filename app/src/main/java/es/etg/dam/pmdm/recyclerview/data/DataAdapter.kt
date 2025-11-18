@@ -24,7 +24,7 @@ class DataAdapter(private val mList: List<ItemViewModel>) : RecyclerView.Adapter
 
         holder.imageView.setImageResource(itemViewModel.image)
         holder.textView.text = itemViewModel.descripcion
-        holder.textView2.text = itemViewModel.descripcion2
+        holder.tvSaludo.text = itemViewModel.saludo
         holder.itemView.setOnClickListener {
             onClickListener?.onClick(position, itemViewModel)
         }
@@ -45,6 +45,6 @@ class DataAdapter(private val mList: List<ItemViewModel>) : RecyclerView.Adapter
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
         val textView: TextView = itemView.findViewById(R.id.textView)
-        val textView2: TextView = itemView.findViewById(R.id.textView2)
+        val tvSaludo: TextView = itemView.findViewById(R.id.tvSaludo)
     }
 }
